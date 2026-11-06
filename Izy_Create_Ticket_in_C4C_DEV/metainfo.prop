@@ -1,0 +1,5 @@
+#Store metainfo properties
+#Fri Nov 06 13:34:18 UTC 2026
+description=Interface for Ticket Creation from IZY to C4C
+source=IZY
+target=C4C

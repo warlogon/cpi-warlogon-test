@@ -1,0 +1,76 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: Izy_Create_Ticket_in_C4C_DEV
+Bundle-ManifestVersion: 2
+Origin-Bundle-SymbolicName: Izy_Create_Ticket_in_C4C_DEV
+Import-Package:  com.sap.it.rt.adapter.http.component, com.sap.it.rt.ada
+ pter.odata.response, com.sap.it.rt.adapter.odata.destination, com.sap.i
+ t.rt.adapter.odata.auth, com.sap.gateway.core.ip.processor.odataprocess
+ ors, com.sap.gateway.core.ip.component.odata, com.sap.it.nm.security, c
+ om.ctc.wstx.stax, org.codehaus.stax2, org.springframework.transaction.s
+ upport, org.springframework.jdbc.datasource, com.sap.it.iflow.saxonee, 
+ net.sf.saxon.lib, org.mozilla.javascript, org.codehaus.groovy.reflectio
+ n, org.codehaus.groovy.runtime.callsite, org.codehaus.groovy.runtime.ty
+ pehandling, org.codehaus.groovy.runtime, groovy.lang, org.codehaus.groo
+ vy.jsr223, com.sap.gateway.ip.core.customdev.util, com.sap.gateway.ip.c
+ ore.customdev.logging, com.sap.gateway.ip.core.customdev.processor, com
+ .sap.it.http.cookie.policy, org.apache.camel.http.common.cookie, com.sa
+ p.esb.datastore.wrapper, com.sap.esb.monitoring.cxf.response.log, com.s
+ ap.esb.monitoring.cxf.runtime.feature, com.sap.it.op.agent.trace.cxf, c
+ om.sap.esb.size.limiter, com.sap.esb.camel.webservice.endpoint.configur
+ er, com.sap.esb.webservice.security.crypto.api, com.sap.esb.webservice.
+ policy.alternative.selector, org.apache.cxf.ws.security.wss4j, org.apac
+ he.wss4j.common.crypto, javax.security.auth.callback, com.sap.it.iflow.
+ model.runtime, com.sap.it.iflow.model, com.sap.sod.utils.idoc.soap.inte
+ rceptors, com.sap.sod.utils.idoc.soap.processors, com.sap.sod.utils.ido
+ c.soap, com.sap.sod.utils.soap.processors, com.sap.sod.utils.soap, com.
+ sap.sod.utils.encoding.processors, com.sap.sod.utils.cxf.interceptors, 
+ com.sap.it.rt.scc.proxy, com.sap.esb.camel.jdbc.inprogress.repository, 
+ com.sap.esb.camel.jdbc.idempotency.repository, com.sap.esb.camel.webser
+ vice.cxfbinding, com.sap.esb.camel.mpl.access, com.sap.esb.camel.eip.sp
+ litter, com.sap.esb.camel.xmljson, com.sap.it.op.ed, com.sap.it.op.agen
+ t.ed.plugins.camel.api, com.sap.esb.webservice.authorization.supplier.a
+ pi, org.apache.cxf.interceptor.security, net.sf.saxon.xpath, net.sf.sax
+ on,com.sap.esb.application.services.cxf.interceptor,com.sap.esb.securit
+ y,com.sap.it.op.agent.api,com.sap.it.op.agent.collector.camel,com.sap.i
+ t.op.agent.collector.cxf,com.sap.it.op.agent.mpl,javax.jms,javax.jws,ja
+ vax.wsdl,javax.xml.bind.annotation,javax.xml.namespace,javax.xml.ws,org
+ .apache.camel;version="2.8",org.apache.camel.builder;version="2.8",org.
+ apache.camel.builder.xml;version="2.8",org.apache.camel.component.cxf,o
+ rg.apache.camel.model;version="2.8",org.apache.camel.processor;version=
+ "2.8",org.apache.camel.processor.aggregate;version="2.8",org.apache.cam
+ el.spring.spi;version="2.8",org.apache.commons.logging,org.apache.cxf.b
+ inding,org.apache.cxf.binding.soap,org.apache.cxf.binding.soap.spring,o
+ rg.apache.cxf.bus,org.apache.cxf.bus.resource,org.apache.cxf.bus.spring
+ ,org.apache.cxf.buslifecycle,org.apache.cxf.catalog,org.apache.cxf.conf
+ iguration.jsse;version="2.5",org.apache.cxf.configuration.spring,org.ap
+ ache.cxf.endpoint,org.apache.cxf.headers,org.apache.cxf.interceptor,org
+ .apache.cxf.management.counters;version="2.5",org.apache.cxf.message,or
+ g.apache.cxf.phase,org.apache.cxf.resource,org.apache.cxf.service.facto
+ ry,org.apache.cxf.service.model,org.apache.cxf.transport,org.apache.cxf
+ .transport.common.gzip,org.apache.cxf.transport.http,org.apache.cxf.tra
+ nsport.http.policy,org.apache.cxf.workqueue,org.apache.cxf.ws.rm.persis
+ tence,org.apache.cxf.wsdl11,org.osgi.framework;version="1.6.0",org.slf4
+ j;version="1.6",org.springframework.beans.factory.config;version="3.0",
+ com.sap.esb.camel.security.cms,org.apache.camel.spi,com.sap.esb.webserv
+ ice.audit.log,com.sap.esb.camel.endpoint.configurator.api,com.sap.esb.c
+ amel.jdbc.idempotency.reorg,javax.sql,org.apache.camel.processor.idempo
+ tent.jdbc,org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Require-Capability: sap-HCIOData;resolution:=optional,sap-HTTPS;resoluti
+ on:=optional
+Origin-Bundle-Name: Izy Create Ticket in C4C DEV
+SAP-RuntimeProfile: iflmap
+WorkspaceProfile: iflmap
+Bundle-Name: Izy Create Ticket in C4C DEV
+Bundle-Version: 1.0.12
+Bundle-ClassPath: .
+SAP-NodeType: IFLMAP
+SAP-BundleType: IntegrationFlow
+Import-Service:  javax.sql.DataSource;multiple:=false;filter="(name=wrap
+ per)", com.sap.esb.camel.endpoint.configurator.api.EndpointConfigurator
+ ;multiple:=false;filter="(endpointType=SFTP)",com.sap.esb.webservice.au
+ dit.log.AuditLogger,com.sap.esb.security.KeyManagerFactory;multiple:=fa
+ lse,com.sap.esb.security.TrustManagerFactory;multiple:=false,javax.sql.
+ DataSource;multiple:=false;filter="(dataSourceName=default)",org.apache
+ .cxf.ws.rm.persistence.RMStore;multiple:=false,com.sap.esb.camel.securi
+ ty.cms.SignatureSplitter;multiple:=false
+

@@ -1,0 +1,9 @@
+#
+#Fri Nov 06 13:34:18 UTC 2026
+C4C_AUTH_TYPE=Basic
+C4C_CERT=
+C4C_CRED_FR11=see4c_IZYCPITECH_qa
+C4C_CRED_FR31=see4c_IZYCPITECH_BBGRFR_dev
+C4C_ODATA=https\://my000000.crm.ondemand.com
+env=/dev
+host=/izy/c4c/createticket
